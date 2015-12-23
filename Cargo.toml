@@ -15,14 +15,9 @@ build = "build.rs"
 name = "pnet"
 
 [features]
-default = ["clippy"]
 netmap = ["netmap_sys"]
 appveyor = []
 travis = []
-
-[dependencies.clippy]
-optional = true
-version = ">=0.0"
 
 [dependencies.netmap_sys]
 features = ["netmap_with_libs"]
